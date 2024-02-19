@@ -1,0 +1,390 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/********** header  **********/
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    /* background-color: #dfe6e9; */
+    background-color: #265073;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: sticky;
+    top: 0px;
+}
+
+/********** logo **********/
+
+.logo {
+    font-weight: 700;
+    color: ORANGE;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*********** navbar ***********/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 5px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 550;
+    color: aqua;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: orange;
+}
+
+
+
+/*********** dark & light mode ***********/
+
+.mode {
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+
+}
+
+#bar {
+    display: none;
+}
+
+/*********** About ***********/
+
+.about {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 22px;
+    color: black;
+    background-color: #2D9596;
+}
+
+.about-info {
+    width: 55%;
+    word-spacing: 10px;
+}
+
+
+.about-info p span {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: darkblue;
+}
+
+.about-img img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+/*********** Chamber ***********/
+.chamber {
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.chamber-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.box1 {
+    border: 2px solid black;
+    padding: 30px;
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    border-radius: 30%;
+    background-color: #0C2D57;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 a {
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.box1 i {
+    font-size: 25px;
+    color: orange;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline 2px solid brown;
+    text-underline-offset: 10px;
+}
+
+.mobile-navbar {
+    display: none;
+}
+
+/*********** footer ***********/
+
+.footer {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 15px;
+    word-spacing: 10px;
+    gap: 10px;
+}
+
+.links a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.info-me {
+    padding: 15px;
+}
+
+
+/*---------------------------------------*/
+/*---------------------------------------*/
+/*---------------------------------------*/
+
+
+@media only screen and (max-width: 600px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        overflow-x: none;
+    }
+
+
+    .header {
+        position: sticky;
+        top: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: #265073;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .logo {
+        font-weight: 700;
+        color: ORANGE;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+
+    .mode {
+        padding: 5px;
+        display: flex;
+        gap: 30px;
+        font-size: 20px;
+    }
+
+    #bar {
+        display: inline-block;
+        font-size: 22px;
+        color: white;
+    }
+
+
+    .about {
+        padding: 80px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        font-size: 20px;
+        color: black;
+    }
+
+    .about-info {
+        width: 120%;
+        word-spacing: 10px;
+        text-align: start;
+    }
+
+
+
+    /*********** Chamber ***********/
+    .chamber {
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .chamber-box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .box1 {
+        border: 2px solid black;
+        padding: 30px;
+        height: 150px;
+        width: 200px;
+        text-align: center;
+        border-radius: 30%;
+        background-color: #0C2D57;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box1 a {
+        font-size: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        font-weight: 500;
+        color: white;
+    }
+
+    .box1 i {
+        font-size: 25px;
+        color: orange;
+    }
+
+    h2 {
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: underline 2px solid brown;
+        text-underline-offset: 10px;
+    }
+
+    .mobile-navbar {
+        position: fixed;
+        background-color: rgb(0, 0, 0, 0.8);
+        border: 2px solid black;
+        height: 380px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .navbar-mobile {
+        font-size: 25px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .navbar-mobile li {
+        list-style: none;
+    }
+
+    .navbar-mobile li a {
+        color: white;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .navbar-mobile li a:hover {
+        color: orange;
+        text-decoration: underline 2px solid lightskyblue;
+        text-underline-offset: 10px;
+    }
+
+
+
+
+
+
+
+
+
+    /*********** footer ***********/
+
+    .footer {
+        margin-top: 20px;
+        padding: 30px;
+        background-color: #2c3e50;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 15px;
+        word-spacing: 10px;
+        gap: 10px;
+    }
+
+    .links a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+
+    .info-me {
+        padding: 15px;
+    }
+
+}
