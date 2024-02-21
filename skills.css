@@ -52,6 +52,9 @@
     color: orange;
 }
 
+.mobile-navbar {
+    display: none;
+}
 
 
 /*********** dark & light mode ***********/
@@ -67,11 +70,6 @@
 #bar {
     display: none;
 }
-
-.mobile-navbar {
-    display: none;
-}
-
 
 @media only screen and (max-width: 600px) {
     * {
@@ -118,6 +116,8 @@
         color: white;
     }
 
+
+
     .mobile-navbar {
         position: fixed;
         background-color: rgb(0, 0, 0, 0.8);
@@ -153,5 +153,4 @@
         text-decoration: underline 2px solid lightskyblue;
         text-underline-offset: 10px;
     }
-
 }
