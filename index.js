@@ -9,7 +9,7 @@ $(document).ready(function() {
         $('.about-info').css({'color': 'white'})
         $('.about-info p span').css({'color': 'orange'})
         $('h2').css({'color':'orange'});
-        $('.about').css({'background':'#424769'})
+        $('.about').css({'background':'black'})
     })
     $('#moon').click(function() {
         $('#moon').hide(function() {
