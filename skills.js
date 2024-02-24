@@ -10,6 +10,8 @@ $(document).ready(function() {
         $('.about-info p span').css({'color': 'orange'})
         $('h2').css({'color':'orange'});
         $('.about').css({'background':'black'})
+        $('#section-skill-logo').css({'color':'orange','border-left':' 5px solid brown '})
+        $('.rect1').css({'background':'black','color':'white', 'border':'2px solid lime'})
     })
     $('#moon').click(function() {
         $('#moon').hide(function() {
@@ -19,6 +21,8 @@ $(document).ready(function() {
             $('.about').css({'background':' #2D9596'})
             $('.header').css({'background':'#265073'})
             $('h2').css({'color':'black'});
+            $('#section-skill-logo').css({'color':'black'})
+            $('.rect1').css({'background':'white','color':'black', 'border':'1px solid black'})
         });
 
         $('#sun').show();

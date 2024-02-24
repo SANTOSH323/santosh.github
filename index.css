@@ -168,6 +168,7 @@
     font-size: 25px;
     color: orange;
 }
+
 .box3 {
     border: 2px solid black;
     padding: 30px;
@@ -364,18 +365,20 @@ h2 {
 
     .mobile-navbar {
         position: fixed;
-        background-color: rgb(0, 0, 0, 0.8);
+        background-color: rgba(58, 57, 57, 0.9);
         border: 2px solid black;
         height: 380px;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        /* border-bottom: 1px solid white; */
     }
 
     .navbar-mobile {
-        font-size: 25px;
+        font-size: 28px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 600;
         padding: 5px;
         display: flex;
         flex-direction: column;
@@ -387,7 +390,7 @@ h2 {
     }
 
     .navbar-mobile li a {
-        color: white;
+        color: yellow;
         text-decoration: none;
         list-style: none;
     }
