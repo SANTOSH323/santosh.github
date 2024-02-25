@@ -12,6 +12,8 @@ $(document).ready(function() {
         $('.about').css({'background':'black'})
         $('#section-skill-logo').css({'color':'orange','border-left':' 5px solid brown '})
         $('.rect1').css({'background':'black','color':'white', 'border':'2px solid lime'})
+        $('#section-project-logo').css({'color':'orange','border-left':' 5px solid brown '})
+        $('#project-heading').css({'color':'darkblue'});
     })
     $('#moon').click(function() {
         $('#moon').hide(function() {
@@ -23,6 +25,8 @@ $(document).ready(function() {
             $('h2').css({'color':'black'});
             $('#section-skill-logo').css({'color':'black'})
             $('.rect1').css({'background':'white','color':'black', 'border':'1px solid black'})
+            $('#section-project-logo').css({'color':'black'})
+            $('#project-heading').css({'color':'darkblue'});
         });
 
         $('#sun').show();

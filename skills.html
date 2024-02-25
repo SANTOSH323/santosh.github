@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="skills.css">
     <title>skills</title>
 </head>
@@ -63,9 +64,37 @@
         </div>
     </div>
 
-    
+    <div class="section-project">
+        <div id="section-project-logo">
+            <h1>Projects</h1>
+        </div>
+
+        <div class="proj">
+            <div class="proj1" data-aos="fade-right">
+                <span id="project-heading">Project 1</span>
+                <a href="index.html" id="btn1">View</a>
+            </div>
+            <div class="proj2">
+                <span id="project-heading">Project 2</span>
+                <a href="" id="btn2">View</a>
+            </div>
+            <div class="proj3" data-aos="fade-left">
+                <span id="project-heading">Project 3</span>
+                <a href="" id="btn3">View</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="jquery.js"></script>
     <script src="skills.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 1500
+        });
+    </script>
 </body>
 
 </html>
